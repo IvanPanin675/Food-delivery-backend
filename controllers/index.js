@@ -7,7 +7,7 @@ const {
   updateAvatar,
 } = require("./auth");
 const { getAllDiskonts, addDiskont, deleteDiskont } = require("./diskonts");
-const { getShops } = require("./shops");
+const getShops = require("./shops");
 const {
   getAllOrders,
   addOrder,
