@@ -1,10 +1,11 @@
 const { Product } = require("../../models");
 
 const getProducts = async (req, res) => {
-  const { nameShop: owner } = req.query;
+  const { data: owner } = req.body;
+  
 
   const data = await Product.find({ owner });
-
+  console.log(data)
   if (!data) {
     throw HttpError(404, "Your not have order");
   }
