@@ -18,11 +18,4 @@ router.post("/logout", authenticate, ctrl.logout);
 
 router.patch("/", authenticate, ctrl.patchChanges);
 
-router.patch(
-  "/avatars",
-  authenticate,
-  upload.single("avatar"),
-  ctrl.updateAvatar
-);
-
 module.exports = router;

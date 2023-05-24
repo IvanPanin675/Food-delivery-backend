@@ -4,10 +4,10 @@ const logger = require("morgan");
 const cors = require("cors");
 const {
   authRouter,
-  noticesRouter,
-  friendsRouter,
-  newsRouter,
-  petsRouter,
+  ordersRouter,
+  shopsRouter,
+  productsRouter,
+  diskontsRouter,
 } = require("./routes/api");
 
 const app = express();
@@ -20,10 +20,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use("/api/auth", authRouter);
-// app.use("/api/notices", noticesRouter);
-// app.use("/api/friends", friendsRouter);
-// app.use("/api/news", newsRouter);
-// app.use("/api/pets", petsRouter);
+app.use("/api/orders", ordersRouter);
+app.use("/api/shops", shopsRouter);
+app.use("/api/products", productsRouter);
+app.use("/api/diskonts", diskontsRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" });

@@ -6,7 +6,7 @@ const userSchema = new Schema(
   {
     password: {
       type: String,
-      required: [true, "Password is required"],
+      // required: [true, "Password is required"],
     },
     email: {
       type: String,
@@ -17,37 +17,17 @@ const userSchema = new Schema(
       type: String,
       default: "",
     },
-    birthday: {
-      type: String,
-      default: "",
-    },
     phone: {
       type: String,
       default: "",
     },
-    city: {
-      type: String,
-      default: "",
-    },
-    myAbs: {
-      type: Array,
-      default: [],
-    },
-    myPets: {
+    myDiskonts: {
       type: Array,
       default: [],
     },
     token: {
       type: String,
       default: null,
-    },
-    avatarURL: {
-      type: String,
-      default: "",
-    },
-    favoriteNotice: {
-      type: Array,
-      default: [],
     },
   },
   { versionKey: false, timestamps: true }

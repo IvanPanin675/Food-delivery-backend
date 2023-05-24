@@ -1,7 +1,7 @@
 const User = require("./user");
-const Pet = require("./pet");
-const Sponsor = require("./friends");
-const New = require("./news");
-const Notice = require("./notice")
+const Diskont = require("./diskont");
+const Shop = require("./shop");
+const Product = require("./product");
+const Order = require("./order")
 
-module.exports = { User, Pet, Sponsor, New, Notice };
+module.exports = { User, Diskont, Shop, Product, Order };

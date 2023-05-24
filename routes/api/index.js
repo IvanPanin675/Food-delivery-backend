@@ -1,13 +1,13 @@
-const petsRouter = require("./petsRoutes");
+const diskontsRouter = require("./diskontRoutes");
 const authRouter = require("./authRouter");
-const noticesRouter = require("./noticesRouter");
-const friendsRouter = require("./friends");
-const newsRouter = require("./news");
+const ordersRouter = require("./ordersRouter");
+const shopsRouter = require("./shops");
+const productsRouter = require("./products");
 
 module.exports = {
   authRouter,
-  noticesRouter,
-  friendsRouter,
-  newsRouter,
-  petsRouter,
+  ordersRouter,
+  shopsRouter,
+  productsRouter,
+  diskontsRouter,
 };

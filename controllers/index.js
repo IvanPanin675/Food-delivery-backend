@@ -6,25 +6,16 @@ const {
   register,
   updateAvatar,
 } = require("./auth");
-const { addPet, deletePet, getAllPets } = require("./pets");
-const { getFriends } = require("./friends");
-const { getNews } = require("./news");
+const { getAllDiskonts, addDiskont, deleteDiskont } = require("./diskonts");
+const { getShops } = require("./shops");
 const {
-  getAllNotice,
-  addNotice,
-  deleteNotice,
-  getTitle,
-  getNoticeOnlyAddUser,
-  getCategory,
-  getOne,
-  updateStatusFavorite,
-  getFavoriteUsers,
-  deleteFavoriteNotices,
-  addNoticeCategory,
-  addCategory,
-  getUsersNotice,
-  getFavoriteUsersArray
-} = require("./notices");
+  getAllOrders,
+  addOrder,
+  getAllOrdersAuth
+} = require("./orders");
+const getProducts = require("./products");
+
+
 
 module.exports = {
   current,
@@ -33,23 +24,12 @@ module.exports = {
   patchChanges,
   register,
   updateAvatar,
-  getAllPets,
-  addPet,
-  deletePet,
-  getFriends,
-  getNews,
-  getAllNotice,
-  addNotice,
-  deleteNotice,
-  getTitle,
-  getNoticeOnlyAddUser,
-  getCategory,
-  getOne,
-  updateStatusFavorite,
-  getFavoriteUsers,
-  deleteFavoriteNotices,
-  addNoticeCategory,
-  addCategory,
-  getUsersNotice,
-  getFavoriteUsersArray,
+  getAllDiskonts,
+  addDiskont,
+  deleteDiskont,
+  getShops,
+  getAllOrders,
+  addOrder,
+  getAllOrdersAuth,
+  getProducts
 };
