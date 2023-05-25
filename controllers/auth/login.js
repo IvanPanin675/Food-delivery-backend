@@ -29,7 +29,6 @@ const login = async (req, res) => {
 
   const token = jwt.sign(payload, SECRET_KEY, { expiresIn: "23h" });
   await User.findByIdAndUpdate(user._id, { token });
-  const pets = await Pet.find({ owner: user._id });
 
   res.status(201).json({
     token,
@@ -45,7 +44,6 @@ const login = async (req, res) => {
       myPets: user.myPets,
       favoriteNotice: user.favoriteNotice,
     },
-    pets,
   });
 };
 

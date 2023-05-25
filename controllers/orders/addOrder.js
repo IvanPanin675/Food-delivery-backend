@@ -8,7 +8,7 @@ const addOrder = async (req, res) => {
     customerName,
     customerLocation,
     shop,
-    product,
+    products,
     customerPhone,
     priceAll,
   } = req.body;
@@ -17,7 +17,7 @@ const addOrder = async (req, res) => {
     customerName,
     customerLocation,
     shop,
-    product,
+    products,
     customerPhone,
     priceAll,
     date,
