@@ -13,7 +13,7 @@ const addOrder = async (req, res) => {
     priceAll,
   } = req.body;
   
-  const date = new Date();
+  const date = await new Date();
 
   const data = await Order.create({
     customerName,
