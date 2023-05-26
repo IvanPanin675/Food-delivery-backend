@@ -12,8 +12,6 @@ const addOrder = async (req, res) => {
     customerPhone,
     priceAll,
   } = req.body;
-  
-  const date = await new Date();
 
   const data = await Order.create({
     customerName,
@@ -22,7 +20,6 @@ const addOrder = async (req, res) => {
     products,
     customerPhone,
     priceAll,
-    date,
     owner,
   });
   if (!data) {

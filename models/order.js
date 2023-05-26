@@ -8,10 +8,6 @@ const orderSchema = new Schema(
       type: String,
       required: [true, "Set customer name"],
     },
-    date: {
-      type: Date,
-      required: true,
-    },
     customerLocation: {
       type: String,
       required: true,
