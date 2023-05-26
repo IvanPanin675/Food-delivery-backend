@@ -5,13 +5,13 @@ const { User } = require("../../models");
 const getAllOrders = async (req, res) => {
   const { email } = req.query;
 
-  const authUser = await User.find({ email })
+  // const authUser = await User.find({ email })
   
-  if (authUser.password) {
-    throw HttpError(401);
-  }
+  // if (authUser.password) {
+  //   throw HttpError(401);
+  // }
 
-  const data = await Order.find({ owner: email });
+  const data = await Order.find({email});
   
   if (!data) {
     throw HttpError(404, "Your not have order");
