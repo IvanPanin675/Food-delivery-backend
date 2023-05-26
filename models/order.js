@@ -9,7 +9,7 @@ const orderSchema = new Schema(
       required: [true, "Set customer name"],
     },
     date: {
-      type: String,
+      type: Object,
       required: true,
     },
     customerLocation: {
