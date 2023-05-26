@@ -9,7 +9,7 @@ const orderSchema = new Schema(
       required: [true, "Set customer name"],
     },
     date: {
-      type: String,
+      type: Date,
       required: true,
     },
     customerLocation: {
@@ -19,20 +19,19 @@ const orderSchema = new Schema(
     shop: {
       type: String,
     },
-    produts: {
+    products: {
       type: Array,
     },
     customerPhone: {
       type: String,
-      required: [true, "Set category"],
+      required: true,
     },
     owner: {
       type: String,
-      ref: "user",
       required: true,
     },
     priceAll: {
-      type: String,
+      type: Number,
       required: true,
     },
   },

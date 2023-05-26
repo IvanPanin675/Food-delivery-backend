@@ -4,7 +4,7 @@ const { HttpError } = require("../../helpers");
 
 const addOrder = async (req, res) => {
   const {
-    email: owner,
+    owner,
     customerName,
     customerLocation,
     shop,
@@ -12,6 +12,7 @@ const addOrder = async (req, res) => {
     customerPhone,
     priceAll,
   } = req.body;
+  console.log(req.body)
   const date = new Date();
   const data = await Order.create({
     customerName,
@@ -26,7 +27,7 @@ const addOrder = async (req, res) => {
   if (!data) {
     throw HttpError(400);
   }
-  res.status(201).json(email);
+  res.status(201).json(owner);
 };
 
 module.exports = addOrder;
