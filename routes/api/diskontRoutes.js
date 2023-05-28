@@ -3,7 +3,7 @@ const diskontsRouter = express.Router();
 
 const controllers = require("../../controllers");
 const { authenticate } = require("../../middlewares");
-const { ctrlWrapper } = require("../../helpers");
+const ctrlWrapper = require("../../helpers/ctrlWrapper");
 
 
 diskontsRouter.get("/", authenticate, ctrlWrapper(controllers.getAllDiskonts));
