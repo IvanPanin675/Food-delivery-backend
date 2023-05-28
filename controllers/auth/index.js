@@ -1,6 +1,6 @@
 
 
-const { ctrlWrapper } = require("../../helpers/ctrlWrapper");
+const { ctrlWrapper } = require("../../helpers");
 const current = require("./current");
 const findUser = require("./findUser");
 const login = require("./login");
