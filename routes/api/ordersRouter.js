@@ -4,12 +4,14 @@ const ordersRouter = express.Router();
 const { authenticate } = require("../../middlewares");
 
 const controllers = require("../../controllers");
+const { ctrlWrapper } = require("../../helpers");
 
-ordersRouter.get("/", controllers.getAllOrders);
 
-// ordersRouter.get("/auth", authenticate, controllers.getAllOrdersAuth);
+ordersRouter.get("/", ctrlWrapper(controllers.getAllOrders));
 
-ordersRouter.post("/", controllers.addOrder);
+// ordersRouter.get("/auth", authenticate, ctrlWrapper(controllers.getAllOrdersAuth));
+
+ordersRouter.post("/", ctrlWrapper(controllers.addOrder));
 
 
 module.exports = ordersRouter;
