@@ -4,7 +4,6 @@ const {
   logout,
   patchChanges,
   register,
-  updateAvatar,
   findUser,
 } = require("./auth");
 const { getAllDiskonts, addDiskont, deleteDiskont } = require("./diskonts");
@@ -24,7 +23,6 @@ module.exports = {
   logout,
   patchChanges,
   register,
-  updateAvatar,
   getAllDiskonts,
   addDiskont,
   deleteDiskont,
