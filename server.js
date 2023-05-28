@@ -19,5 +19,3 @@ mongoose
     console.log(error.message);
     process.exit(1);
   });
-
-// https://patron-back.onrender.com
