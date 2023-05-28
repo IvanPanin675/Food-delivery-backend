@@ -21,4 +21,6 @@ router.post("/logout", authenticate, ctrlWrapper(ctrl.logout));
 
 router.patch("/", authenticate, ctrlWrapper(ctrl.patchChanges));
 
+router.get("/finduser", ctrlWrapper(ctrl.findUser))
+
 module.exports = router;
