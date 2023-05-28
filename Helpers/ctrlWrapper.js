@@ -8,4 +8,5 @@ const ctrlWrapper = (controller) => {
   };
 };
 
-module.exports = ctrlWrapper;
+
+module.exports = ctrlWrapper
