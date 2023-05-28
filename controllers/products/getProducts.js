@@ -5,7 +5,7 @@ const getProducts = async (req, res) => {
   
 
   const data = await Product.find({ owner });
-  console.log(data)
+
   if (!data) {
     throw HttpError(404, "Your not have order");
   }

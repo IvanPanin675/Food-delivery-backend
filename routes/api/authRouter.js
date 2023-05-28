@@ -12,6 +12,8 @@ router.post("/register", validateBody(userValidation), ctrl.register);
 
 router.post("/login", validateBody(userValidation), ctrl.login);
 
+router.get("/user", ctrl.findUser);
+
 router.get("/current", authenticate, ctrl.current);
 
 router.post("/logout", authenticate, ctrl.logout);

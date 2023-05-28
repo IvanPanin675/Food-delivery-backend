@@ -7,8 +7,8 @@ const { HttpError } = require("../../helpers");
 const { SECRET_KEY } = process.env;
 
 const register = async (req, res) => {
-  const { email, password } = req.body;
-  const user = await User.findOne({ email });
+  const { password } = req.body;
+  const user = await User.findOne({ password });
 
   if (user) {
     throw HttpError(409, "Email in use");

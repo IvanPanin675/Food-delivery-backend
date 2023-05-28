@@ -5,6 +5,7 @@ const {
   patchChanges,
   register,
   updateAvatar,
+  findUser,
 } = require("./auth");
 const { getAllDiskonts, addDiskont, deleteDiskont } = require("./diskonts");
 const getShops = require("./shops");
@@ -31,5 +32,6 @@ module.exports = {
   getAllOrders,
   addOrder,
   getAllOrdersAuth,
-  getProducts
+  getProducts,
+  findUser
 };
