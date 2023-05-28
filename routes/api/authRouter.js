@@ -5,7 +5,7 @@ const { validateBody } = require("../../utils");
 const userValidation = require("../../schemas/userValidation");
 const ctrl = require("../../controllers/auth");
 const { authenticate, upload, passport } = require("../../middlewares");
-const { ctrlWrapper } = require("../../helpers");
+const ctrlWrapper = require("../../helpers/ctrlWrapper");
 
 const router = express.Router();
 

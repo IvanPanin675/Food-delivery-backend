@@ -1,6 +1,6 @@
 const express = require("express");
 const { getProducts } = require("../../controllers");
-const { ctrlWrapper } = require("../../helpers");
+const ctrlWrapper = require("../../helpers/ctrlWrapper");
 
 const router = express.Router();
 

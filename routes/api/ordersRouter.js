@@ -4,7 +4,7 @@ const ordersRouter = express.Router();
 const { authenticate } = require("../../middlewares");
 
 const controllers = require("../../controllers");
-const { ctrlWrapper } = require("../../helpers");
+const ctrlWrapper = require("../../helpers/ctrlWrapper");
 
 
 ordersRouter.get("/", ctrlWrapper(controllers.getAllOrders));
