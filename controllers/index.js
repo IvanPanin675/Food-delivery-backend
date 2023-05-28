@@ -8,14 +8,8 @@ const {
 } = require("./auth");
 const { getAllDiskonts, addDiskont, deleteDiskont } = require("./diskonts");
 const getShops = require("./shops");
-const {
-  getAllOrders,
-  addOrder,
-  getAllOrdersAuth
-} = require("./orders");
+const { getAllOrders, addOrder, getAllOrdersAuth } = require("./orders");
 const getProducts = require("./products");
-
-
 
 module.exports = {
   current,
@@ -31,5 +25,5 @@ module.exports = {
   addOrder,
   getAllOrdersAuth,
   getProducts,
-  findUser
+  findUser,
 };
