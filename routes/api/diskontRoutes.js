@@ -1,9 +1,8 @@
 const express = require("express");
 const diskontsRouter = express.Router();
 
-const { authenticate } = require("../../middlewares");
-
 const controllers = require("../../controllers");
+const { authenticate } = require("../../middlewares");
 
 diskontsRouter.get("/", authenticate, controllers.getAllDiskonts);
 
