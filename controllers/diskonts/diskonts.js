@@ -1,4 +1,4 @@
-const { HttpError } = require("../../helpers");
+const HttpError  = require("../../Helpers/HttpError");
 const { Diskont } = require("../../models");
 
 const getAllDiskonts = async (req, res) => {
