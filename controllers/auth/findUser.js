@@ -1,4 +1,4 @@
-const { HttpError } = require("../../Helpers/HttpError");
+const HttpError  = require("../../Helpers/HttpError");
 const { User } = require("../../models");
 
 
