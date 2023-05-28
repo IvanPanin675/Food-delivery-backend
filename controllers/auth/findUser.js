@@ -1,5 +1,6 @@
-const { User } = require("../../models");
 const { HttpError } = require("../../helpers");
+const { User } = require("../../models");
+
 
 
 const findUser = async (req, res) => {
