@@ -6,7 +6,7 @@ const { authenticate } = require("../../middlewares");
 const { ctrlWrapper } = require("../../helpers");
 
 
-diskontsRouter.get("/", authenticate, ctrlWrapper(controllers.getAllDiskonts));
+diskontsRouter.get("/", ctrlWrapper(controllers.getAllDiskonts));
 
 diskontsRouter.post("/", ctrlWrapper(controllers.addDiskont));
 

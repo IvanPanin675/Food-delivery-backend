@@ -2,9 +2,10 @@ const HttpError  = require("../../Helpers/HttpError");
 const { Diskont } = require("../../models");
 
 const getAllDiskonts = async (req, res) => {
-  const { myDiskonts } = req.user;
-  const data = await Diskont.find({ _id: myDiskonts })
-  res.status(200).json(data);
+
+  const data = await Diskont.find({})
+  console.log(data)
+  res.status(200).json({ data });
 };
 
 const addDiskont = async (req, res) => {
