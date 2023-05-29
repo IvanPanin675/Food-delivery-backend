@@ -30,8 +30,9 @@ const orderSchema = new Schema(
       type: Number,
       required: true,
     },
+    
   },
-  { versionKey: false }
+  { versionKey: false, timestamps: true }
 );
 orderSchema.post("save", handleSchemaErrors);
 

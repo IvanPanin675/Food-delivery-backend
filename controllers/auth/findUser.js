@@ -1,8 +1,6 @@
 const HttpError  = require("../../Helpers/HttpError");
 const { User } = require("../../models");
 
-
-
 const findUser = async (req, res) => {
   const { email } = req.query;
   console.log(email);

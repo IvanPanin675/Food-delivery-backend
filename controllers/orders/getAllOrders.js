@@ -4,7 +4,7 @@ const { User } = require("../../models");
 
 const getAllOrders = async (req, res) => {
 
-  const data = await Order.find(req.query);
+  const data = await Order.find(req.query).sort({'updatedAt': -1});
   
   if (!data) {
     throw HttpError(404, "Your not have order");

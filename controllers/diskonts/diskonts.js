@@ -3,7 +3,7 @@ const { Diskont } = require("../../models");
 
 const getAllDiskonts = async (req, res) => {
 
-  const data = await Diskont.find({})
+  const data = await Diskont.find({}).sort()
   console.log(data)
   res.status(200).json({ data });
 };
